@@ -16,15 +16,7 @@ func main() {
 
 	fmt.Printf("Starting to ping URL: %s\n", url)
 
-	// Get interval from environment variable, default to 60 seconds
-	// Note: This is not used in the current version as it only pings once
-	intervalStr := os.Getenv("PING_INTERVAL")
-	interval := 60 // default interval in seconds
-	if intervalStr != "" {
-		fmt.Sscanf(intervalStr, "%d", &interval)
-	}
-
-	// Ping the URL once without waiting for response
+	// Ping the URL once without waiting for a response
 	pingURLAsync(url)
 
 	fmt.Println("Request sent successfully")

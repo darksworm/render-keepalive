@@ -12,7 +12,6 @@ A minimal Docker application that pings a specified URL once. Designed to be as 
 ## Environment Variables
 
 - `PING_URL` (required): The URL to ping
-- `PING_INTERVAL` (optional): Not used in current version as it only pings once
 
 ## Building the Docker Image
 
